@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Math Test</title>
+</head>
+<body>
+
+    <h1>Online Math Test</h1>
+    <p>Welcome! Read each question carefully and do your best.</p>
+
+    <!-- Start of the test -->
+
+    <form action="#" method="post">
+
+        <label for="studentName">Your Name:</label>
+        <input type="text" id="studentName" name="studentName"
+               placeholder="Enter your name" required>
+
+        <hr>
+
+        <h2>Multiple Choice Questions</h2>
+
+        <fieldset>
+            <legend>1. What is 8 &times; 7?</legend>
+
+            <input type="radio" id="q1a" name="question1" value="54">
+            <label for="q1a">54</label><br>
+
+            <input type="radio" id="q1b" name="question1" value="56">
+            <label for="q1b">56</label><br>
+
+            <input type="radio" id="q1c" name="question1" value="64">
+            <label for="q1c">64</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>2. What is 36 &divide; 6?</legend>
+
+            <input type="radio" id="q2a" name="question2" value="5">
+            <label for="q2a">5</label><br>
+
+            <input type="radio" id="q2b" name="question2" value="6">
+            <label for="q2b">6</label><br>
+
+            <input type="radio" id="q2c" name="question2" value="7">
+            <label for="q2c">7</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>3. Which number is less than or equal to 10?</legend>
+
+            <input type="radio" id="q3a" name="question3" value="12">
+            <label for="q3a">12</label><br>
+
+            <input type="radio" id="q3b" name="question3" value="15">
+            <label for="q3b">15</label><br>
+
+            <input type="radio" id="q3c" name="question3" value="10">
+            <label for="q3c">10</label>
+        </fieldset>
+
+        <hr>
+
+        <h2>Word Problem</h2>
+
+        <p>
+            4. Mia is a math teacher. She has 24 pencils and
+            wants to share them equally among 4 students.
+            How many pencils will each student receive?
+            Explain how you found your answer.
+        </p>
+
+        <label for="wordAnswer">Your Answer:</label><br>
+
+        <textarea id="wordAnswer" name="wordAnswer"
+                  rows="6" cols="50"
+                  placeholder="Type your answer here..."></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit Test</button>
+
+    </form>
+
+    <!-- End of the test -->
+
+</body>
+</html>
