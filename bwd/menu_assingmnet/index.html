@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Fork | Restaurant Menus</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #f6efe3;
+            color: #fff;
+            text-align: center;
+        }
+
+        .restaurant-header {
+            color: #493321;
+            margin-bottom: 35px;
+        }
+
+        .restaurant-header h1 {
+            font-size: 42px;
+            margin-bottom: 8px;
+        }
+
+        .restaurant-header p {
+            font-size: 17px;
+            font-style: italic;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 25px;
+        }
+
+        .menu {
+            width: 400px;
+            height: 550px;
+            padding: 28px;
+            margin: 10px;
+            border: 5px solid #d6ad60;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .menu-content {
+            background-color: rgba(30, 23, 17, 0.82);
+            border: 1px solid #d6ad60;
+            padding: 18px;
+        }
+
+        .menu h2 {
+            font-size: 32px;
+            color: #f5d58c;
+            margin: 0 0 8px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .menu .subtitle {
+            font-size: 13px;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .menu h3 {
+            color: #f5d58c;
+            font-size: 19px;
+            margin: 15px 0 8px;
+            border-bottom: 1px solid #d6ad60;
+            padding-bottom: 5px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 8px;
+            text-align: left;
+            font-size: 14px;
+            margin: 11px 0;
+        }
+
+        .price {
+            color: #f5d58c;
+            white-space: nowrap;
+        }
+
+        .menu-footer {
+            font-style: italic;
+            font-size: 12px;
+            margin-top: 18px;
+        }
+
+        /* BREAKFAST MENU */
+        .breakfast {
+            background-image:
+                linear-gradient(rgba(45, 30, 15, 0.30),
+                                rgba(45, 30, 15, 0.30)),
+                url("https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* LUNCH MENU */
+        .lunch {
+            background-image:
+                linear-gradient(rgba(20, 35, 20, 0.35),
+                                rgba(20, 35, 20, 0.35)),
+                url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* DINNER MENU */
+        .dinner {
+            background-image:
+                linear-gradient(rgba(35, 15, 15, 0.35),
+                                rgba(35, 15, 15, 0.35)),
+                url("https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .page-footer {
+            color: #493321;
+            margin: 35px 0 10px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 12px;
+            }
+
+            .menu {
+                width: 400px;
+                max-width: 100%;
+                margin: 5px 0;
+                padding: 18px;
+            }
+
+            .menu-content {
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="restaurant-header">
+        <h1>✦ The Golden Fork ✦</h1>
+        <p>Fresh Flavors • Beautiful Moments</p>
+    </header>
+
+    <main class="menu-container">
+
+        <!-- BREAKFAST MENU -->
+        <div class="menu breakfast">
+            <div class="menu-content">
+                <h2>Breakfast</h2>
+                <div class="subtitle">A BRIGHT START TO YOUR DAY</div>
+
+                <h3>From the Kitchen</h3>
+
+                <div class="menu-item">
+                    <span>Fluffy Pancakes</span>
+                    <span class="price">$9</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Avocado Toast</span>
+                    <span class="price">$11</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Classic Eggs & Toast</span>
+                    <span class="price">$10</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Berry Yogurt Parfait</span>
+                    <span class="price">$7</span>
+                </div>
+
+                <h3>Morning Drinks</h3>
+
+                <div class="menu-item">
+                    <span>Fresh Orange Juice</span>
+                    <span class="price">$4</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>House Coffee</span>
+                    <span class="price">$3</span>
+                </div>
+
+                <div class="menu-footer">
+                    Served daily from 7 AM – 11 AM
+                </div>
+            </div>
+        </div>
+
+        <!-- LUNCH MENU -->
+        <div class="menu lunch">
+            <div class="menu-content">
+                <h2>Lunch</h2>
+                <div class="subtitle">FRESH, COLORFUL & DELICIOUS</div>
+
+                <h3>Midday Favorites</h3>
+
+                <div class="menu-item">
+                    <span>Grilled Chicken Salad</span>
+                    <span class="price">$14</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Garden Veggie Wrap</span>
+                    <span class="price">$10</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Classic Cheeseburger</span>
+                    <span class="price">$15</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Tomato Basil Soup</span>
+                    <span class="price">$8</span>
+                </div>
+
+                <h3>Cool Refreshments</h3>
+
+                <div class="menu-item">
+                    <span>Homemade Lemonade</span>
+                    <span class="price">$4</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Iced Tea</span>
+                    <span class="price">$3</span>
+                </div>
+
+                <div class="menu-footer">
+                    Served daily from 11 AM – 3 PM
+                </div>
+            </div>
+        </div>
+
+        <!-- DINNER MENU -->
+        <div class="menu dinner">
+            <div class="menu-content">
+                <h2>Dinner</h2>
+                <div class="subtitle">AN EVENING TO REMEMBER</div>
+
+                <h3>Signature Entrées</h3>
+
+                <div class="menu-item">
+                    <span>Herb-Grilled Steak</span>
+                    <span class="price">$28</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Roasted Salmon</span>
+                    <span class="price">$24</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Creamy Alfredo Pasta</span>
+                    <span class="price">$18</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Wild Mushroom Risotto</span>
+                    <span class="price">$19</span>
+                </div>
+
+                <h3>Drinks & Dessert</h3>
+
+                <div class="menu-item">
+                    <span>Strawberry Cheesecake</span>
+                    <span class="price">$8</span>
+                </div>
+
+                <div class="menu-item">
+                    <span>Sparkling Lemonade</span>
+                    <span class="price">$5</span>
+                </div>
+
+                <div class="menu-footer">
+                    Served daily from 5 PM – 10 PM
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="page-footer">
+        <p>Thank you for dining with The Golden Fork!</p>
+        <p>Good food. Great company. Golden memories.</p>
+    </footer>
+
+</body>
+</html>
+
