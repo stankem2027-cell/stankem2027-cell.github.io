@@ -1,1 +1,162 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Busy Day Schedule</title>
+
+    <!-- Internal CSS Stylesheet -->
+    <style>
+        /* Style the entire webpage */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Style the table */
+        table {
+            width: 85%;
+            margin: 25px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        /* Style table headers */
+        th {
+            background-color: #34495e;
+            color: white;
+            padding: 15px;
+            font-size: 17px;
+        }
+
+        /* Style all table cells */
+        td {
+            border: 1px solid #ccc;
+            padding: 13px;
+            font-size: 15px;
+        }
+
+        /* Style table rows */
+        tr:nth-child(even) {
+            background-color: #e8f4fc;
+        }
+
+        tr:hover {
+            background-color: #d5e8f5;
+        }
+
+        /* Style the time column */
+        .time-column {
+            background-color: #dce6f1;
+            font-weight: bold;
+            width: 25%;
+        }
+
+        /* Style the activity column */
+        .activity-column {
+            width: 45%;
+        }
+
+        /* Style the status column */
+        .status-column {
+            width: 30%;
+        }
+
+        /* Style the page heading */
+        h1 {
+            color: #34495e;
+        }
+
+        p {
+            color: #555;
+        }
+
+        /* Style a special row using an ID */
+        #last-event {
+            background-color: #d4edda;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>My Busy Day Schedule</h1>
+    <p>A look at everything I need to accomplish in one busy day!</p>
+
+    <table>
+        <tr>
+            <th class="time-column">Time</th>
+            <th class="activity-column">Activity</th>
+            <th class="status-column">Status</th>
+        </tr>
+
+        <tr>
+            <td class="time-column">6:30 AM</td>
+            <td>Wake up and get ready</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td class="time-column">7:00 AM</td>
+            <td>Eat breakfast</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td class="time-column">8:00 AM</td>
+            <td>Go to school / work</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td class="time-column">10:00 AM</td>
+            <td>Finish assignments and emails</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td class="time-column">12:00 PM</td>
+            <td>Eat lunch</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td class="time-column">1:00 PM</td>
+            <td>Go grocery shopping</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td class="time-column">3:00 PM</td>
+            <td>Clean the house and do laundry</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td class="time-column">5:00 PM</td>
+            <td>Prepare and eat dinner</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr>
+            <td class="time-column">7:00 PM</td>
+            <td>Study and finish homework</td>
+            <td>Completed</td>
+        </tr>
+
+        <tr id="last-event">
+            <td class="time-column">9:00 PM</td>
+            <td>Relax and get ready for bed</td>
+            <td>Completed</td>
+        </tr>
+    </table>
+
+</body>
+</html>
+
