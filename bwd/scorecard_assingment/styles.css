@@ -1,0 +1,58 @@
+/* Shared styles for all three scorecards */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    margin: 30px;
+    color: #222222;
+}
+
+header {
+    text-align: center;
+    background-color: #123B5D;
+    color: white;
+    padding: 15px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px;
+}
+
+nav a {
+    color: #123B5D;
+    margin: 10px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #E76F51;
+}
+
+table {
+    width: 90%;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 2px solid #123B5D;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #2A9D8F;
+    color: white;
+}
+
+/* Pseudo class: changes every other row */
+tr:nth-child(even) {
+    background-color: #dcefeb;
+}
+
+h2 {
+    text-align: center;
+    color: #123B5D;
+}
