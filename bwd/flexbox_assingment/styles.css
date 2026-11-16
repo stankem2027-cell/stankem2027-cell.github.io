@@ -1,0 +1,43 @@
+body {
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 650px;
+    margin: auto;
+}
+
+.header, .puzzle-section, .date {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid darkblue;
+    text-align: center;
+}
+
+.header {
+    background-color: lightcyan;
+}
+
+.puzzle {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: auto;
+}
+
+.puzzle img {
+    width: 150px;
+    height: 110px;
+}
+
+.wrong {
+    display: none;
+}
+
+.date {
+    background-color: lightcyan;
+}
