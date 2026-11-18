@@ -37,72 +37,6 @@ h1 { margin-bottom: 4px; }
   border-radius: 50%;
 }
 
-
-.football-frame {
-  width: 600px;
-  max-width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 50px 500px 50px;
-  grid-template-rows: 45px 230px 45px;
-  overflow: hidden;
-  background: white;
-}
-
-.football-frame > img {
-  grid-column: 2;
-  grid-row: 2;
-  width: 500px;
-  height: 230px;
-  object-fit: cover;
-}
-
-.ttt {
-  display: grid;
-  background: white;
-}
-
-.ttt span {
-  position: relative;
-  background-image: url("tic-tac-toe.png");
-  background-repeat: no-repeat;
-  background-size: 150px 150px;
-  border-color: #333;
-  border-style: solid;
-}
-
-.ttt .x { background-position: 0 0; }
-.ttt .o { background-position: -50px 0; }
-
-.ttt.top, .ttt.bottom {
-  grid-template-columns: repeat(10, 50px);
-  grid-column: 1 / 4;
-}
-
-.ttt.top { grid-row: 1; }
-.ttt.bottom { grid-row: 3; }
-
-.ttt.top span, .ttt.bottom span {
-  border-width: 0 1px 1px 0;
-}
-
-.ttt.bottom span { border-width: 1px 1px 0 0; }
-
-.ttt.left, .ttt.right {
-  grid-template-rows: repeat(4, 57.5px);
-  grid-row: 2;
-}
-
-.ttt.left { grid-column: 1; }
-.ttt.right { grid-column: 3; }
-
-.ttt.left span, .ttt.right span {
-  border-width: 0 1px 1px 0;
-}
-
-.ttt.right span { border-width: 0 0 1px 1px; }
-
-
 .dinosaur {
   display: block;
   width: 455px;
@@ -166,15 +100,3 @@ h1 { margin-bottom: 4px; }
   text-shadow: 1px 2px 3px #222;
 }
 
-@media (max-width: 680px) {
-  body { padding: 15px; }
-  .football-frame {
-    grid-template-columns: 38px minmax(0, 1fr) 38px;
-    grid-template-rows: 36px auto 36px;
-  }
-  .football-frame > img {
-    width: 100%;
-    height: auto;
-  }
-  .ttt.top, .ttt.bottom { grid-template-columns: repeat(10, minmax(0, 1fr)); }
-}
