@@ -28,7 +28,6 @@ h1 { margin-bottom: 4px; }
   font-size: 20px;
 }
 
-/* 1 — ellipse */
 .penguins {
   display: block;
   width: 450px;
@@ -38,7 +37,7 @@ h1 { margin-bottom: 4px; }
   border-radius: 50%;
 }
 
-/* 2 — football field surrounded by the tic-tac-toe image */
+
 .football-frame {
   width: 600px;
   max-width: 100%;
@@ -103,7 +102,7 @@ h1 { margin-bottom: 4px; }
 
 .ttt.right span { border-width: 0 0 1px 1px; }
 
-/* 3 — box-shadow */
+
 .dinosaur {
   display: block;
   width: 455px;
@@ -112,7 +111,7 @@ h1 { margin-bottom: 4px; }
   filter: drop-shadow(12px 12px 7px rgba(0,0,0,.8));
 }
 
-/* 4 — card shadow */
+
 .seagull-card {
   width: 600px;
   max-width: 100%;
@@ -130,7 +129,7 @@ h1 { margin-bottom: 4px; }
   background: transparent;
 }
 
-/* 5 — color/filter effect */
+
 .butterfly {
   display: block;
   width: 400px;
@@ -140,7 +139,7 @@ h1 { margin-bottom: 4px; }
   border-radius: 0 70px 0 70px;
 }
 
-/* 6 — blur + centered text */
+
 .theater {
   position: relative;
   width: 400px;
