@@ -8,6 +8,13 @@ body {
   color: #222;
 }
 
+.project { margin: 35px 0; padding: 22px; background: white; border: 1px solid #ddd;}
+
+.project h2 {
+  margin: 0 0 18px;
+  font-size: 20px;
+}
+
 main {
   max-width: 900px;
   margin: 0 auto;
