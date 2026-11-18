@@ -23,36 +23,107 @@ main {
 h1 { margin-bottom: 4px; }
 .intro { margin-top: 0; color: #555; }
 
-.board {
-    width: 600px;
-    text-align: center;
-    margin:auto;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-
-.row {
-    font-size: 40px;
-    letter-spacing: 8px;
-    border-bottom: 3px solid #444;
-    padding: 5px;
+ 
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:#fff;
+font-family:Arial, sans-serif;
 }
-
-.middle {
-    display: flex;
-    margin:20px auto;
+ 
+.board{
+width:950px;
 }
+ 
 
-.middle img {
-    width: 500px;
-    height: 230px;
-    filter: grayscale(100%);
+ 
+.top-row,
+.bottom-row{
+display:grid;
+grid-template-columns:repeat(10, 1fr);
+height:70px;
 }
-
-.side {
-    font-size: 40px;
-    line-height: 55px;
-    width: 50px;
+ 
+.top-row > div,
+.bottom-row > div{
+border:2px solid #444;
 }
+ 
 
+ 
+.middle{
+display:grid;
+grid-template-columns:70px 1fr 70px;
+height:360px;
+}
+ 
+
+ 
+.side{
+display:grid;
+grid-template-rows:repeat(4,1fr);
+}
+ 
+.side > div{
+border:2px solid #444;
+}
+ 
+
+ 
+.field{
+background:url("football_field.jpg") center center/cover no-repeat;
+border-top:2px solid #444;
+border-bottom:2px solid #444;
+}
+ 
+
+ 
+.o,
+.x{
+position:relative;
+background:white;
+}
+ 
+
+.o::before{
+content:"";
+position:absolute;
+width:34px;
+height:34px;
+border:8px solid #444;
+border-radius:50%;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
+ 
+
+.x::before,
+.x::after{
+content:"";
+position:absolute;
+width:12px;
+height:48px;
+background:#444;
+top:50%;
+left:50%;
+border-radius:3px;
+}
+ 
+.x::before{
+transform:translate(-50%,-50%) rotate(45deg);
+}
+ 
+.x::after{
+transform:translate(-50%,-50%) rotate(-45deg);
+}
 .penguins {
   display: block;
   width: 450px;
