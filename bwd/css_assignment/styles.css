@@ -26,6 +26,7 @@ h1 { margin-bottom: 4px; }
 .board {
     width: 600px;
     text-align: center;
+    margin:auto;
 }
 
 .row {
@@ -43,6 +44,7 @@ h1 { margin-bottom: 4px; }
 .middle img {
     width: 500px;
     height: 230px;
+    filter: grayscale(100%);
 }
 
 .side {
