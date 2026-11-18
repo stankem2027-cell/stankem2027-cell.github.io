@@ -26,7 +26,6 @@ h1 { margin-bottom: 4px; }
 
 .image-frame {
   display: inline-block;
-  padding: 20px;
   border: 20px solid transparent;
   border-image: url("images/tic-tac-toe.png") 30 round;
 }
@@ -35,6 +34,8 @@ h1 { margin-bottom: 4px; }
   display: block;
   max-width: 100%;
   height: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 
