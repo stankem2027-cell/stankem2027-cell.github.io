@@ -23,6 +23,12 @@ main {
 h1 { margin-bottom: 4px; }
 .intro { margin-top: 0; color: #555; }
 
+.football { 
+  border-image-source: url(filename.jpg);
+  margin:auto;
+}
+
+
 .penguins {
   display: block;
   width: 450px;
