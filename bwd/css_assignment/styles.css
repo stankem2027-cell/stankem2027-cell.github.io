@@ -24,7 +24,8 @@ h1 { margin-bottom: 4px; }
 .intro { margin-top: 0; color: #555; }
 
 .football { 
-  border-image-source: url(tic-tac-toe.png);
+  display: inline-block;
+  border-image-source: url(tic-tac-toe.png) 30 round;
   margin:auto;
 }
 
