@@ -24,19 +24,19 @@ h1 { margin-bottom: 4px; }
 
 .intro { margin-top: 0; color: #555; }
 
+
 .image-frame {
   display: inline-block;
-  padding:0;
+  padding: 20px;
   border: 20px solid transparent;
-  border-image: url("tic-tac-toe.png") 30 round;
+  border-image: url("border-pattern.png") 30 round;
+  filter: grayscale(100%);
 }
 
 .image-frame img {
   display: block;
   max-width: 100%;
   height: auto;
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
 }
 
 
