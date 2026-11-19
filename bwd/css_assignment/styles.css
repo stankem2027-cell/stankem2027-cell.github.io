@@ -29,13 +29,13 @@ h1 { margin-bottom: 4px; }
   display: inline-block;
   border: 20px solid transparent;
   border-image: url("tic-tac-toe.png") 30 round;
-  filter: grayscale(100%);
 }
 
 .image-frame img {
   display: block;
   max-width: 100%;
   height: auto;
+  filter: grayscale(100%);
 }
 
 
@@ -53,8 +53,7 @@ h1 { margin-bottom: 4px; }
   width: 455px;
   max-width: 100%;
   margin: auto;
-  filter: drop-shadow(12px 12px 7px rgba(0,0,0,.8));
-  filter: hue-rotate(110deg);
+  filter: hue-rotate(110deg) drop-shadow(12px 12px 7px rgba(0,0,0,.8));
 }
 
 
