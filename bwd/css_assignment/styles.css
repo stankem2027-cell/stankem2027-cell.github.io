@@ -28,7 +28,7 @@ h1 { margin-bottom: 4px; }
 .image-frame {
   display: inline-block;
   border: 20px solid transparent;
-  border-image: url("tic-tac-toe.png") 30 round;
+  border-image: url("images/tic-tac-toe.png") 30 round;
 }
 
 .image-frame img {
